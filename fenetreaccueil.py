@@ -26,15 +26,15 @@ class View(QWidget):
         self.faccueil = FenetreLumieres(self)
         
         self.bvolet = QPushButton('Menu Volets')
-        self.bvolet.setStyleSheet("background-color: rgb(94,213,207) ; border-style: outset ; border-width: 0 px; border-radius: 5px;  color : white ; padding: 4px")
+        self.bvolet.setStyleSheet("background-color: rgb(83,163,45) ; border-style: outset ; border-width: 0 px; border-radius: 5px;  color : white ; padding: 4px")
         self.blumieres = QPushButton('Menu lumières')
-        self.blumieres.setStyleSheet("background-color: rgb(94,213,207) ; border-style: outset ; border-width: 0 px; border-radius: 5px ; color : white ; padding: 4px")
-        self.bbeeper = QPushButton('Beeper')
-        self.bbeeper.setStyleSheet("background-color: rgb(94,213,207) ; border-style: outset ; border-width: 0 px; border-radius: 5px;  color : white ; padding: 4px")
+        self.blumieres.setStyleSheet("background-color: rgb(83,163,45) ; border-style: outset ; border-width: 0 px; border-radius: 5px ; color : white ; padding: 4px")
+        #self.bbeeper = QPushButton('Beeper')
+        #self.bbeeper.setStyleSheet("background-color: rgb(94,213,207) ; border-style: outset ; border-width: 0 px; border-radius: 5px;  color : white ; padding: 4px")
         
         
         self.label = QLabel(self)
-        self.pixmap = QPixmap('photointer.png')
+        self.pixmap = QPixmap('logo5.png')
         self.label.setPixmap(self.pixmap)     
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         
@@ -66,7 +66,7 @@ class View(QWidget):
         v_box = QHBoxLayout()
         v_box.addWidget(self.bvolet)
         v_box.addWidget(self.blumieres)
-        v_box.addWidget(self.bbeeper)
+        #v_box.addWidget(self.bbeeper)
         
         
         h_box = QVBoxLayout()
@@ -76,8 +76,8 @@ class View(QWidget):
         self.setLayout(h_box) 
         
         self.setGeometry(400,400    ,500,200)
-        self.setWindowTitle('Domo')
-        self.setWindowIcon(QIcon('photointer.png'))
+        self.setWindowTitle('Majord"home')
+        self.setWindowIcon(QIcon('logo5.png'))
         
     def blumieres_click(self):
         self.hide()

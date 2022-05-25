@@ -60,7 +60,7 @@ class FenetreLumieres(QWidget) :
         
         v_chk = QVBoxLayout()
         v_chk.addWidget(self.chklampe1)
-        url = "http://172.16.115.149:5000"
+        url = "http://172.16.201.100:5000"
         data = urllib.request.urlopen(url).read().decode()
         valJson = json.loads(data)
         etat1 = valJson["lampe1"]
